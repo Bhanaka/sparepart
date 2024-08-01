@@ -26,5 +26,6 @@ public class UserRole {
     private Set<UserRegistration> users = new HashSet<>();
     @Column
     private Boolean status ;
+    //spring boot 
 
 }
