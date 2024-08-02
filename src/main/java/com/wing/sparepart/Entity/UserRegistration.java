@@ -20,6 +20,8 @@ public class UserRegistration {
     private String lastname;
     @Column()
     private String username;
+    @Column
+    private  String password ;
     @ManyToOne
     @JoinColumn(name = "userrole_id", nullable = false)
     private UserRole role;
