@@ -1,5 +1,7 @@
 package com.wing.sparepart.Service;
 
+import com.wing.sparepart.DTO.LoginRequest;
+import com.wing.sparepart.Entity.UserRegistration;
 import com.wing.sparepart.Entity.UserRole;
 import com.wing.sparepart.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,4 +17,6 @@ public class UserService {
     public List<UserRole> getAllUsers() {
         return userRepository.findAll();
     }
+
+
 }

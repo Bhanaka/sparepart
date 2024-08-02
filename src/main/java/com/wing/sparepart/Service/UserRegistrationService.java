@@ -12,4 +12,10 @@ public class UserRegistrationService {
     public UserRegistration saveUser(UserRegistration userRegistration){
         return userRegistrationRepository.save(userRegistration) ;
     }
+    public boolean authenticate(String userName ,String userPassword ) {
+        String username = "";
+        UserRegistration userRegistration =userRegistrationRepository.findByUsername(username );
+         return true;
+
+    }
 }
